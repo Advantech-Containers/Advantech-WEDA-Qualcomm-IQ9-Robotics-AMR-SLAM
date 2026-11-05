@@ -1,0 +1,15 @@
+
+
+# systemcfg.json
+WEDA_NODE_URL=localhost:4224
+WEDA_NODE_USERNAME=
+WEDA_NODE_PASSWORD=
+
+# Weda Cloud (NATS)
+WEDA_CLOUD_URL=nats://sandbox01.trial.weda.dev:4222
+
+# devicecfg.json MQTT parameter
+MQTT_BROKER_URL=mqtt://127.0.0.1:1883
+MQTT_CLIENT_ID=weda-Test-camera-02
+MQTT_TOPIC=Robot_position_02
+SUBNODE_NAME=Testemqttsubnode02

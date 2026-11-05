@@ -1,0 +1,13 @@
+services:
+  testmqttsubnode:
+    image: testmqttsubnode:latest
+    build:
+      context: ../..
+      dockerfile: apps/TestMqttSubNode/Dockerfile
+    env_file: .env
+    environment:
+      - WEDA__CLOUD__URL=${WEDA_CLOUD_URL:-nats://sandbox01.trial.weda.dev:4222}
+    volumes:
+      - ./weda-data:/app/.weda   
+    network_mode: host
+    restart: unless-stopped
